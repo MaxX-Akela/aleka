@@ -7,7 +7,6 @@ class server(commands.Cog):
 
     @commands.slash_command()
     async def server_info(self, inter: disnake.AppCmdInter):
-        """Информация о сервере."""
         guild = inter.guild
         embed = disnake.Embed(title=guild.name, color=0x00ff00)
         embed.add_field(name="ID", value=guild.id)

@@ -8,7 +8,7 @@ class Avatar(commands.Cog):
     @commands.slash_command(description="Аватарка")
     async def avatar(self, ctx, member: disnake.Member = None):
         if member is None:
-            member = ctx.author  # Если пользователь не указан, используем автора сообщения
+            member = ctx.author 
 
         embed = disnake.Embed(title=f"Аватар {member.name}", color=disnake.Color.blue())
         embed.set_image(url=member.avatar.url if member.avatar else member.default_avatar.url)

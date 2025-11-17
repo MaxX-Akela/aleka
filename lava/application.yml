@@ -1,6 +1,6 @@
 server: # REST and WS server
   port: 2333
-  address: 192.168.10.70
+  address: 
   http2:
     enabled: false # Whether to enable HTTP/2 support
 plugins:
